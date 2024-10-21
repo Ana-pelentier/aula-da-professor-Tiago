@@ -1,0 +1,22 @@
+/*
+Uma loja precisa atualizar seu sistema de controle de estoque.
+Crie um vetor chamado 'estoqueProdutos' com os produtos "camiseta", "calça" e "sapato". 
+Adicione o produto "meia" ao final da lista. Remova o primeiro produto da lista e mude
+o segundo produto para "bermuda". Imprima o estoque atualizado no final.
+*/
+
+// Um vetor chamado estoqueProdutos é criado com os produtos iniciais.
+let estoqueProdutos = ["camiseta", "calça", "sapato"];
+
+// O produto "meia" é adicionado ao final da lista usando o método push().
+estoqueProdutos.push("meia");
+
+// O método shift() é usado para remover o primeiro produto da lista, que é "camiseta".
+estoqueProdutos.shift();
+
+// O segundo produto (que agora é "calça") é modificado para "bermuda".
+estoqueProdutos[1] = "bermuda";
+
+// O estoque atualizado é exibido no console.
+console.log(estoqueProdutos);
+["calça", "bermuda", "sapato", "meia"]
